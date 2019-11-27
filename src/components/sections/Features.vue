@@ -61,7 +61,7 @@
           </p>
         </v-col>
         <v-col
-          v-if="k !== project.length - 1"
+          v-if="j !== project.length - 1"
           cols="12"
           class="py-5 hidden-sm-and-down"
           order-xs="4"

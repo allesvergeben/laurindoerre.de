@@ -18,15 +18,16 @@
       <v-btn
         v-for="item in items"
         :key="item.key"
-        href="#try-it"
         text
         @click.prevent="$vuetify.goTo(item.ref)"
+        class="hidden-xs-only"
       >
         {{ item.title }}
       </v-btn>
       <v-btn
-        href="mailto:kontakt@laurindoerre.de?subject=Contact%20via%20Homepage&amp;body=Dear%20Mr%20Dörre,%0D%0A%0D%0A"
+        v-if="isScrolling"
         text
+        href="mailto:kontakt@laurindoerre.de?subject=Contact%20via%20Homepage&amp;body=Dear%20Mr%20Dörre,%0D%0A%0D%0A"
       >
         Contact
       </v-btn>

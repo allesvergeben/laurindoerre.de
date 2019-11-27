@@ -26,21 +26,22 @@
           class="mr-10"
           text
           rounded
-          to="/impressum"
+          @click="showImmpressum=true"
         >
           Impressum
         </v-btn>
+        <impressum v-model="showImmpressum" />
       </v-row>
     </v-container>
   </v-footer>
 </template>
 
 <script>
+  import Impressum from '../../views/Impressum'
   export default {
-    computed: {
-      categories () {
-        return []
-      }
-    }
+    components: { Impressum },
+    data: () => ({
+      showImmpressum: false
+    })
   }
 </script>

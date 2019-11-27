@@ -27,7 +27,7 @@
             Applications, Homepages, Websites, Interfaces & more
           </p>
 
-          <div class="py-4" />
+          <div class="py-4"></div>
 
           <v-row
             class="ma-0"

@@ -17,10 +17,9 @@
 
         <v-btn
           class="my-3"
-          href="https://vuetifyjs.com/components/api-explorer"
+          href="https://github.com/allesvergeben/laurindoerre.de"
           large
           min-width="128"
-          rel="noopener"
           rounded
           target="_blank"
         >

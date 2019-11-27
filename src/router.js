@@ -11,11 +11,6 @@ const router = new Router({
       path: '/',
       name: 'Home',
       component: () => import('@/views/Home')
-    },
-    {
-      path: '/impressum',
-      name: 'Impressum',
-      component: () => import('@/components/sections/Impressum')
     }
   ]
 })

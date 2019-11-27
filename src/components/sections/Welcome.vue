@@ -26,6 +26,8 @@
           >
             <v-img
               width="500px"
+              fill
+              style="overflow: hidden"
               :src="service.img"
               contain
             />
@@ -88,12 +90,10 @@
                         size="20"
                         tile
                       >
-                        <v-lazy>
-                          <img
-                            :src="fw.image"
-                            alt="Logo"
-                          >
-                        </v-lazy>
+                        <img
+                          :src="fw.image"
+                          alt="Logo"
+                        >
                       </v-list-item-avatar>
                       {{ fw.name }}
                     </v-list-item>
@@ -114,7 +114,7 @@
       services: [
         {
           name: 'Front-End-Design',
-          body: 'Designing any type of Front-End-Interface...',
+          body: 'Redesigning an already existent Front-End-Interface or creating a new one. ',
           img: require('@/assets/Services/Frond-End-Design.jpg')
         },
         {
@@ -126,22 +126,22 @@
         },
         {
           name: 'SEO/SEA',
-          body: 'Search Engine Optimization and Analytics',
+          body: 'Google Analytics and Search Engine Optimization/Analytics',
           img: require('@/assets/Services/SEO-SEA.jpg')
         },
         {
           name: 'Presentations',
-          body: 'Designs, Slide Masters & Complete Presentations e.g. public appearances ',
+          body: 'Slide Masters & Complete Presentations in Impress.js Keynote & Powerpoint e.g. public appearances ',
           img: require('@/assets/Services/Presentations.jpg')
         },
         {
           name: 'Video Editing',
-          body: 'Cutting & Animation creating',
+          body: 'Cutting & Animation creating - only for Campaigns or Presentation needs',
           img: require('@/assets/Services/Video-Editing.jpg')
         },
         {
           name: 'Photo Editing',
-          body: 'Editing Photos for Homepages, Animations etc.',
+          body: 'Editing and creating Photos, Animations etc. for homepages, flyers and posters',
           img: require('@/assets/Services/Photo-Editing.jpg')
         }
       ]
