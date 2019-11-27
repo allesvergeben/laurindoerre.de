@@ -94,7 +94,7 @@
                 width="300"
               >
                 <v-card-title>
-                  {{ card.title }} by {{ card.author }}
+                  <strong>{{ card.title }}</strong> by {{ card.author }}
                 </v-card-title>
                 <v-card-subtitle>
                   {{ card.subtitle }}
