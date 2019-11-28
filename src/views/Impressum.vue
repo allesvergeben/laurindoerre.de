@@ -12,6 +12,7 @@
         icon
         dark
         @click="show = false"
+        aria-label="Close Impressum"
       >
         <v-icon>mdi-close</v-icon>
       </v-btn>
@@ -60,6 +61,7 @@
                     color="primary"
                     text
                     target="_blank"
+                    aria-label="visit the source"
                     :href="card.source"
                   >
                     visit
@@ -112,6 +114,7 @@
                     text
                     target="_blank"
                     :href="card.source"
+                    aria-label="visit the source"
                   >
                     visit
                   </v-btn>

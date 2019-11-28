@@ -9,6 +9,7 @@
       fixed
       right
       small
+      aria-label="jump to top"
       :style="{
         marginBottom: '8px'
       }"

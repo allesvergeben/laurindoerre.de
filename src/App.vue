@@ -23,6 +23,7 @@
           <v-spacer />
           <v-btn
             text
+            aria-label="close"
             @click="construction = false"
           >
             close

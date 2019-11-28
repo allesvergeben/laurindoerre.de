@@ -27,7 +27,6 @@
           class="hidden-sm-and-down"
         >
           <v-sheet
-            max-width="600"
             class="mx-auto"
           >
             <v-carousel
@@ -35,7 +34,8 @@
               cycle
               show-arrows-on-hover
               hide-delimiters
-              height="400"
+              height="100%"
+              style="max-height: 244px"
             >
               <v-carousel-item
                 v-for="(src, k) in project.srcs"
@@ -87,7 +87,7 @@
             'and a web service (<strong>REST</strong>) are required as server systems. In addition, there are various user interfaces available.\n'
         },
         {
-          srcs: ['/static/FreeTimeProjects/FTP_1.png', '/static/FreeTimeProjects/FTP_1.png'],
+          srcs: ['/static/FreeTimeProjects/EinfachBot1.jpg', '/static/FreeTimeProjects/EinfachBot2.jpg', '/static/FreeTimeProjects/EinfachBot3.jpg'],
           header: 'Bot. Einfach.',
           text: 'The goal was to develop a Discord Bot with which it is possible to see who is currently on which Einfach. game server. ' +
             'If a server crashes, it should be possible for every member of the server to restart the server via Discord. Done was this ' +

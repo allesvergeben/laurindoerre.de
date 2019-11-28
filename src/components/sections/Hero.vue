@@ -35,7 +35,7 @@
             justify-md="start"
           >
             <v-btn
-              class="mr-md-3 my-2"
+              class="mr-sm-3 my-2"
               color="white"
               href="#pricing"
               large

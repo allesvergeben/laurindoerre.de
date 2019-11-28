@@ -14,10 +14,10 @@
         class="fill-height"
         justify="start"
       >
-        <div>
+        <div class="hidden-xs-only">
           <v-img src="/static/LND-Consulting-Long-Logo-Dark-LowRes.png" />
         </div>
-        <v-spacer />
+        <v-spacer class="hidden-xs-only" />
         <div class="caption pr-md-12">
           &copy;{{ new Date().getFullYear() }}. All rights reserved
         </div>
@@ -25,6 +25,7 @@
         <v-btn
           class="mr-10"
           text
+          aria-label="Impressum"
           rounded
           @click="showImmpressum=true"
         >
