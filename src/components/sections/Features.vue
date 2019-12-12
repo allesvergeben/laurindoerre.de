@@ -4,8 +4,7 @@
     class="px-3"
   >
     <section-header
-      header="Own Projects"
-      sub-header="My free time projects"
+      sub-header="projects"
       text="Some projects I do in my free time alone and together with friends"
     />
 
@@ -34,8 +33,7 @@
               cycle
               show-arrows-on-hover
               hide-delimiters
-              height="100%"
-              style="max-height: 244px"
+              height="250px"
             >
               <v-carousel-item
                 v-for="(src, k) in project.srcs"
@@ -87,7 +85,7 @@
             'and a web service (<strong>REST</strong>) are required as server systems. In addition, there are various user interfaces available.\n'
         },
         {
-          srcs: ['/static/FreeTimeProjects/EinfachBot1.jpg', '/static/FreeTimeProjects/EinfachBot2.jpg', '/static/FreeTimeProjects/EinfachBot3.jpg'],
+          srcs: ['/static/FreeTimeProjects/EinfachBot1.jpg', '/static/FreeTimeProjects/EinfachBot2.jpg', '/static/FreeTimeProjects/EinfachBot3.jpg', '/static/FreeTimeProjects/EinfachBot4.jpg'],
           header: 'Bot. Einfach.',
           text: 'The goal was to develop a Discord Bot with which it is possible to see who is currently on which Einfach. game server. ' +
             'If a server crashes, it should be possible for every member of the server to restart the server via Discord. Done was this ' +

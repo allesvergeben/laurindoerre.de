@@ -15,9 +15,7 @@
       <v-card>
         <v-card-title>unter construction</v-card-title>
         <v-card-text>
-          My new homepage isn't finished jet.<br />
-          Some pictures aren't correct and a lot of text is incomplete.<br />
-          The homepage will be finished on <strong>December 5th</strong>.<br />
+          My new homepage is work in progress and will be updated until end of <strong>January 2020</strong>.
         </v-card-text>
         <v-card-actions>
           <v-spacer />
