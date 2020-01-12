@@ -17,18 +17,23 @@
     "eslint": "^5.8.0",
     "eslint-config-vuetify": "^0.2.0",
     "eslint-plugin-vue": "^5.1.0",
+    "material-design-icons-iconfont": "^5.0.1",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue": "^2.6.10",
     "vue-analytics": "^5.16.1",
+    "vue-cli-plugin-vuetify": "^2.0.2",
     "vue-meta": "^2.0.5",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.6.10",
     "vuetify": "^2.1.11",
-    "vuex": "^3.0.1",
-    "vue-cli-plugin-vuetify": "^2.0.2",
-    "vuetify-loader": "^1.4.2"
+    "vuetify-loader": "^1.4.2",
+    "vuex": "^3.0.1"
+  },
+  "dependencies": {
+    "i18n": "^0.8.4",
+    "vue-i18n": "^8.15.3"
   }
 }

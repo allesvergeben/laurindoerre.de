@@ -1,9 +1,9 @@
 <template>
   <section id="welcome">
     <section-header
-      header="Welcome"
-      sub-header="Services"
-      text="Everything about what I am doing."
+      :header="$t('welcome.header')"
+      :sub-header="$t('welcome.sub-header')"
+      :text="$t('welcome.text')"
     />
     <v-container
       grid-list-xl
@@ -38,7 +38,7 @@
             />
 
             <v-divider class="ma-2" />
-            <v-card-text>{{ service.body }}</v-card-text>
+            <v-card-text>{{ service.body }} <br> {{ service.body2 }}</v-card-text>
             <v-expansion-panels
               v-if="service.name==='Development'"
               class="elevation-0"
@@ -49,7 +49,7 @@
                 class="elevation-0"
               >
                 <v-expansion-panel-header style="color: rgba(0, 0, 0, 0.54);  font-size: 14px">
-                  Coding Languages
+                  {{ $t('welcome.services.development.coding-languages') }}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <v-list
@@ -77,7 +77,7 @@
                 class="elevation-0"
               >
                 <v-expansion-panel-header style="color: rgba(0, 0, 0, 0.54);  font-size: 14px">
-                  Frameworks
+                  {{ $t('welcome.services.development.frameworks') }}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <v-list
@@ -110,38 +110,39 @@
 
 <script>
   export default {
-    data: () => ({
+    data: welcome => ({
       services: [
         {
-          name: 'Front-End-Design',
-          body: 'Redesigning an already existent Front-End-Interface or creating a new one. ',
+          name: welcome.$t('welcome.services.front-end-design.name'),
+          body: welcome.$t('welcome.services.front-end-design.body'),
           img: require('@/assets/Services/Frond-End-Design.jpg')
         },
         {
-          name: 'Development',
-          body: 'Developing Applications in the following Coding Languages & Frameworks',
+          name: welcome.$t('welcome.services.development.name'),
+          body: welcome.$t('welcome.services.development.body'),
           codinglanguages: [{ name: 'Javascript', image: require('@/assets/DevelopmentLogos/JavaScript.png') }, { name: 'Vue.js', image: require('@/assets/DevelopmentLogos/VueJS.png') }, { name: 'PHP', image: require('@/assets/DevelopmentLogos/PHP.png') }, { name: 'Java', image: require('@/assets/DevelopmentLogos/Java.png') }, { name: 'Python', image: require('@/assets/DevelopmentLogos/Python.png') }, { name: 'Dart', image: require('@/assets/DevelopmentLogos/Dart.png') }],
           frameworks: [{ name: 'Vuetify', image: require('@/assets/DevelopmentLogos/Vuetify.png') }, { name: 'Flutter', image: require('@/assets/DevelopmentLogos/Flutter.png') }, { name: '"Wordpress"', image: require('@/assets/DevelopmentLogos/WordPress.png') }],
           img: require('@/assets/Services/Coding.jpg')
         },
         {
-          name: 'SEO/SEA',
-          body: 'Google Analytics and Search Engine Optimization/Analytics',
+          name: welcome.$t('welcome.services.seo-sea.name'),
+          body: welcome.$t('welcome.services.seo-sea.body'),
           img: require('@/assets/Services/SEO-SEA.jpg')
         },
         {
-          name: 'Presentations',
-          body: 'Slide Masters & Complete Presentations in Impress.js Keynote & Powerpoint e.g. public appearances ',
+          name: welcome.$t('welcome.services.presentations.name'),
+          body: welcome.$t('welcome.services.presentations.body'),
+          body2: welcome.$t('welcome.services.presentations.body2'),
           img: require('@/assets/Services/Presentations.jpg')
         },
         {
-          name: 'Video Editing',
-          body: 'Cutting & Animation creating - only for Campaigns or Presentation needs',
+          name: welcome.$t('welcome.services.video-editing.name'),
+          body: welcome.$t('welcome.services.presentations.body'),
           img: require('@/assets/Services/Video-Editing.jpg')
         },
         {
-          name: 'Photo Editing',
-          body: 'Editing and creating Photos, Animations etc. for homepages, flyers and posters',
+          name: welcome.$t('welcome.services.photo-editing.name'),
+          body: welcome.$t('welcome.services.photo-editing.body'),
           img: require('@/assets/Services/Photo-Editing.jpg')
         }
       ]

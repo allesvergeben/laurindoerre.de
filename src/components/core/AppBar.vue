@@ -20,19 +20,47 @@
         :key="item.key"
         :aria-label="item.title"
         text
-        @click.prevent="$vuetify.goTo(item.ref)"
         class="hidden-xs-only"
+        @click.prevent="$vuetify.goTo(item.ref)"
       >
         {{ item.title }}
       </v-btn>
       <v-btn
         v-if="isScrolling"
-        aria-label="Contact"
+        :aria-label="$t('button.contact')"
         text
         href="mailto:kontakt@laurindoerre.de?subject=Contact%20via%20Homepage&amp;body=Dear%20Mr%20Dörre,%0D%0A%0D%0A"
       >
         Contact
       </v-btn>
+      <v-menu offset-y>
+        <template v-slot:activator="{ on }">
+          <v-btn
+            icon
+            v-on="on"
+          >
+            <v-icon
+              color="white"
+            >
+              mdi-web
+            </v-icon>
+          </v-btn>
+        </template>
+        <v-list v-model="$i18n.locale">
+          <v-list-item
+            :disabled="$i18n.locale === 'en'"
+            @click="$i18n.locale = 'en'"
+          >
+            <v-list-item-title>English</v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            :disabled="$i18n.locale === 'de'"
+            @click="$i18n.locale = 'de'"
+          >
+            <v-list-item-title>Deutsch</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-toolbar-items>
   </v-app-bar>
 </template>
@@ -42,19 +70,20 @@
   import { mapMutations } from 'vuex'
 
   export default {
-    data: () => ({
+    data: appbar => ({
+      langs: ['en', 'de'],
       isScrolling: false,
       items: [
         {
-          title: 'Home',
+          title: appbar.$t('button.home'),
           ref: '#home'
         },
         {
-          title: 'Welcome',
+          title: appbar.$t('button.services'),
           ref: '#welcome'
         },
         {
-          title: 'Own projects',
+          title: appbar.$t('button.projects'),
           ref: '#features'
         }
 

@@ -20,11 +20,11 @@
             class="mb-4"
             :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
           >
-            Front-End-Development
+            {{ $t('hero.title') }}
           </h1>
 
           <p class="title font-weight-light">
-            Applications, Homepages, Websites, Interfaces & more
+            {{ $t('hero.description') }}
           </p>
 
           <div class="py-4"></div>
@@ -44,7 +44,7 @@
               rounded
               @click.prevent="$vuetify.goTo('#welcome')"
             >
-              Learn More
+              {{ $t('button.learnmore') }}
             </v-btn>
 
             <v-btn
@@ -55,7 +55,7 @@
               min-width="175"
               rounded
             >
-              Contact
+              {{ $t('button.contact') }}
             </v-btn>
           </v-row>
         </v-sheet>

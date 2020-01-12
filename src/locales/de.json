@@ -1,0 +1,62 @@
+{
+  "button": {
+    "learnmore": "Mehr",
+    "contact": "Kontakt",
+    "home": "home",
+    "services": "services",
+    "projects": "Projekte"
+  },
+  "hero": {
+    "title": "Front-End-Development",
+    "description": "Applikationen, Webseiten, Schnittstellen & mehr"
+  },
+  "welcome": {
+    "header": "Willkommen",
+    "sub-header": "Services",
+    "text": "More than 4 Years of Front-Ent-Development experience for different application.",
+    "services": {
+      "front-end-design": {
+        "name": "Front-End-Design",
+        "body": "Redesign of existing Front-End Interfaces as well as design, develop and maintennance of customer tailered Front-End Interfaces."
+      },
+      "development": {
+        "name": "Development",
+        "body": "Application development in the following Languages and Frameworks...",
+        "coding-languages": "Coding Languages",
+        "frameworks": "Frameworks"
+      },
+      "seo-sea": {
+        "name": "SEO - SEA",
+        "body": "Search Engine Optimisation from indexing to optimizing the Website as well as Search Engine Advertising with e.g. Google AdWords."
+      },
+      "presentations": {
+        "name": "Presentations",
+        "body": "Side master development based on CI style guides for impress.js, Keynote and Powerpoint.",
+        "body2": "Consulting, creation or optimizing of presentation slide decks for meetings, trainings or public presentations. On demand with Google Analytics implementation"
+      },
+      "video-editing": {
+        "name": "Video Editing",
+        "body": "File cutting & animation for campaigns, presentations or marketing events"
+      },
+      "photo-editing": {
+        "name": "Photo Editing",
+        "body": "Editing and creating Photos, Animations etc. for homepages, flyers and posters in Photoshop & Illustator"
+      }
+    }
+  },
+  "github": {
+    "text": "Want to see myself written Code? Check the Code of this Website out now!"
+  },
+  "projects": {
+    "sub-header": "Projects",
+    "text": "Reference projects",
+    "termine": {
+      "header": "Termine. Einfach.",
+      "text_html": "The aim of this cloud application is the basic coordination of appointments between a person making an appointment and a person automatically accepting the appointment based on the availability, as well as the full digitalization of the procedure. The software can be used e.g. in medical surgeries, schools or public authorities. The application was build for parent-teacher conferences and other school purposes. A database (<strong>MySQL</strong>), a web server (<strong>Apache</strong>) and a web service (<strong>REST</strong>) are required as server systems. In addition, there are various user interfaces available."
+    },
+    "bot": {
+      "header": "Bot. Einfach.",
+      "text_html": "The goal was to develop a Discord Bot with which it is possible to see who is currently on which Einfach. game server. If a server crashes, it should be possible for every member of the server to restart the server via Discord. Realized via <strong>Linux Bash Scripts</strong> for the \"server start\" commands, <strong>query</strong> for the communication with the game servers and <strong>JavaScript</strong> for the Discord Bot."
+    }
+  }
+}

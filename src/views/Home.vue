@@ -30,18 +30,6 @@
 
     data: () => ({
       items: ['/static/server-parallax.png']
-    }),
-
-    computed: {
-      cardFeatures () {
-        return []
-      },
-      listFeatures () {
-        return []
-      },
-      testimonials () {
-        return []
-      }
-    }
+    })
   }
 </script>

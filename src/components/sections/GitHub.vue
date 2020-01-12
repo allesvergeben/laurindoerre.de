@@ -10,7 +10,7 @@
         justify="center"
       >
         <h3 class="headline font-weight-light ">
-          Want to see Code written by myself? Check the Code of this Website out now!
+          {{ $t('github.text') }}
         </h3>
 
         <v-spacer class="hidden-sm-and-down" />
