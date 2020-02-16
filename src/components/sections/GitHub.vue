@@ -1,7 +1,7 @@
 <template>
   <section
     id="demo"
-    class="py-5 primary darken-2 white--text"
+    class="py-5 primary"
   >
     <v-container>
       <v-row
@@ -28,8 +28,14 @@
             tile
             style="margin-right: 9px"
           >
+            <v-img
+              v-if="$vuetify.theme.dark"
+              src="../../assets/GitHub-Light.png"
+              alt="Logo"
+            />
             <img
-              src="../../assets/GitHub.png"
+              v-else
+              src="../../assets/GitHub-Dark.png"
               alt="Logo"
             >
           </v-avatar>GitHub

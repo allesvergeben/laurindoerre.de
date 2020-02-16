@@ -1,5 +1,5 @@
 <template>
-  <v-content class="white pt-0">
+  <v-content>
     <router-view />
   </v-content>
 </template>
@@ -8,7 +8,6 @@
   export default {
     metaInfo () {
       return {
-        titleTemplate: '%s — Alpha Theme'
       }
     }
   }

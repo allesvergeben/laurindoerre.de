@@ -1,62 +1,67 @@
 {
   "button": {
     "learnmore": "Mehr",
+    "visit": "Homepage",
     "contact": "Kontakt",
     "home": "home",
-    "services": "services",
+    "services": "Dienstleistungen",
     "projects": "Projekte"
   },
   "hero": {
-    "title": "Front-End-Development",
+    "title": "Front-Entwicklung",
     "description": "Applikationen, Webseiten, Schnittstellen & mehr"
   },
   "welcome": {
     "header": "Willkommen",
-    "sub-header": "Services",
-    "text": "More than 4 Years of Front-Ent-Development experience for different application.",
+    "sub-header": "Dienstleistungen ",
+    "text": "Mehrjährige Erfahrung in der Front-Entwicklung.",
     "services": {
       "front-end-design": {
         "name": "Front-End-Design",
-        "body": "Redesign of existing Front-End Interfaces as well as design, develop and maintennance of customer tailered Front-End Interfaces."
+        "body": "Neugestaltung bestehender Front-End-Schnittstellen sowie Design, Entwicklung und Wartung von kundenindividuellen Front-End-Schnittstellen."
       },
       "development": {
-        "name": "Development",
-        "body": "Application development in the following Languages and Frameworks...",
-        "coding-languages": "Coding Languages",
+        "name": "Entwicklung ",
+        "body": "Anwendungsentwicklung in den folgenden Sprachen und Frameworks...",
+        "coding-languages": "Programmiersprachen",
         "frameworks": "Frameworks"
       },
       "seo-sea": {
         "name": "SEO - SEA",
-        "body": "Search Engine Optimisation from indexing to optimizing the Website as well as Search Engine Advertising with e.g. Google AdWords."
+        "body": "Suchmaschinenoptimierung von der Indizierung bis zur Optimierung der Website sowie Suchmaschinenwerbung mit z.B. Google AdWords."
       },
       "presentations": {
-        "name": "Presentations",
-        "body": "Side master development based on CI style guides for impress.js, Keynote and Powerpoint.",
-        "body2": "Consulting, creation or optimizing of presentation slide decks for meetings, trainings or public presentations. On demand with Google Analytics implementation"
+        "name": "Präsentationen ",
+        "body": "Side Master Entwicklung basierend auf CI Style Guides für impress.js, Keynote und Powerpoint.",
+        "body2": "Beratung, Erstellung oder Optimierung von Präsentationsfolien für Besprechungen, Schulungen oder öffentliche Präsentationen. Auf Wunsch mit Implementierung von Google Analytics Daten. "
       },
-      "video-editing": {
-        "name": "Video Editing",
-        "body": "File cutting & animation for campaigns, presentations or marketing events"
+      "editing": {
+        "name": "Video- und Fotobearbeitung",
+        "body": "Videoschnitt & Animation für Kampagnen, Präsentationen oder Marketingveranstaltungen ",
+        "body2": "Bearbeitung und Erstellung von Fotos, Animationen etc. für Homepages, Flyer und Plakate in Adobe Photoshop, Illustrator und animate."
       },
-      "photo-editing": {
-        "name": "Photo Editing",
-        "body": "Editing and creating Photos, Animations etc. for homepages, flyers and posters in Photoshop & Illustator"
+      "hosting": {
+        "name": "Server/Hosting",
+        "body": "Hosting von Web-Interfaces, APIs, E-Mail Servers, ...",
+        "body2": "Einrichtung und Wartung von Linux Server Systemen, NginX, Docker, Unify, Proxmox, ..."
       }
     }
   },
   "github": {
-    "text": "Want to see myself written Code? Check the Code of this Website out now!"
+    "text": "Schauen Sie sich den Code dieser Website jetzt an!"
   },
   "projects": {
-    "sub-header": "Projects",
-    "text": "Reference projects",
+    "sub-header": "Projekte",
+    "text": "Referenz-Projekte ",
     "termine": {
       "header": "Termine. Einfach.",
-      "text_html": "The aim of this cloud application is the basic coordination of appointments between a person making an appointment and a person automatically accepting the appointment based on the availability, as well as the full digitalization of the procedure. The software can be used e.g. in medical surgeries, schools or public authorities. The application was build for parent-teacher conferences and other school purposes. A database (<strong>MySQL</strong>), a web server (<strong>Apache</strong>) and a web service (<strong>REST</strong>) are required as server systems. In addition, there are various user interfaces available."
+      "text_html": "Das Ziel dieser Cloud-Anwendung ist die grundsätzliche Koordination von Terminen zwischen einer Person, die einen Termin vereinbart, und einer Person, die den Termin je nach Verfügbarkeit automatisch annimmt, sowie die vollständige Digitalisierung des Verfahrens. Die Software kann z.B. in Arztpraxen, Schulen oder Behörden eingesetzt werden. Die Anwendung wurde für Elternsprechtage und andere schulische Zwecke entwickelt. Als Serversysteme werden eine Datenbank (<stark>MySQL</strong>), ein Webserver (<stark>Apache</strong>) und ein Webservice (<stark>REST</strong>) benötigt. Darüber hinaus sind verschiedene Benutzerschnittstellen verfügbar."
     },
-    "bot": {
-      "header": "Bot. Einfach.",
-      "text_html": "The goal was to develop a Discord Bot with which it is possible to see who is currently on which Einfach. game server. If a server crashes, it should be possible for every member of the server to restart the server via Discord. Realized via <strong>Linux Bash Scripts</strong> for the \"server start\" commands, <strong>query</strong> for the communication with the game servers and <strong>JavaScript</strong> for the Discord Bot."
+    "template": {
+      "header": "VuetifyTemplate",
+      "text_html": "Ziel war es, eine Vorlage für Vuetify zu entwickeln, die eine vorgefertigte Projektstruktur enthält. Die Projektstruktur enthält Vuetify und andere Plugins wie vue-router und vuex. Zusätzlich ist für jedes Plugin ein Beispiel enthalten. So können auch Anfänger die Struktur/Plugins verstehen und die Plugin-Funktionen mit VuetifyTemplate leicht erlernen. Für erfahrene Vuetify-Entwickler spart die Vorlage Zeit und bietet eine klare und konsistente Struktur über mehrere Projekte hinweg."
+
     }
   }
 }
+

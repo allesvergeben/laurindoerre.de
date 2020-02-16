@@ -4,20 +4,17 @@
     fullscreen
   >
     <v-app-bar
-      dark
       color="primary"
-      app
     >
       <v-btn
         icon
-        dark
-        @click="show = false"
         aria-label="Close Impressum"
+        @click="show = false"
       >
         <v-icon>mdi-close</v-icon>
       </v-btn>
       <v-toolbar-title>Impressum</v-toolbar-title>
-      <div class="flex-grow-1"></div>
+      <div class="flex-grow-1" />
     </v-app-bar>
     <v-card>
       <v-card-title>
@@ -229,10 +226,10 @@
           source: 'https://stock.adobe.com/de/271336521'
         },
         {
-          title: 'Video Editing',
-          author: 'Milos',
-          subtitle: 'last visit 10.09.2019',
-          img: require('@/assets/Services/Video-Editing.jpg'),
+          title: 'Hosting',
+          author: 'Климов Максим',
+          subtitle: 'last visit 16.02.2020',
+          img: require('@/assets/Services/Hosting.jpg'),
           source: 'https://stock.adobe.com/de/193401349'
         },
         {

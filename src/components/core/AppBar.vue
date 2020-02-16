@@ -1,16 +1,23 @@
 <template>
   <v-app-bar
     v-scroll="onScroll"
-    :color="!isScrolling ? 'transparent' : 'primary'"
     :flat="!isScrolling"
+    color="primary"
     app
-    dark
   >
     <v-img
+      v-if="$vuetify.theme.dark"
       class="shrink"
       contain
-      max-width="50%"
-      src="/static/LND-Consulting-Long-Logo-Light-LowRes.png"
+      max-width="55px"
+      src="/static/Logo-Light.png"
+    />
+    <v-img
+      v-else
+      class="shrink"
+      contain
+      max-width="55px"
+      src="/static/Logo-Dark.png"
     />
     <v-spacer />
 
@@ -39,9 +46,7 @@
             icon
             v-on="on"
           >
-            <v-icon
-              color="white"
-            >
+            <v-icon>
               mdi-web
             </v-icon>
           </v-btn>
@@ -61,6 +66,12 @@
           </v-list-item>
         </v-list>
       </v-menu>
+      <v-btn
+        icon
+        @click="setTheme"
+      >
+        <v-icon>mdi-invert-colors</v-icon>
+      </v-btn>
     </v-toolbar-items>
   </v-app-bar>
 </template>
@@ -70,31 +81,47 @@
   import { mapMutations } from 'vuex'
 
   export default {
-    data: appbar => ({
+    data: () => ({
       langs: ['en', 'de'],
-      isScrolling: false,
-      items: [
-        {
-          title: appbar.$t('button.home'),
-          ref: '#home'
-        },
-        {
-          title: appbar.$t('button.services'),
-          ref: '#welcome'
-        },
-        {
-          title: appbar.$t('button.projects'),
-          ref: '#features'
-        }
-
-      ]
+      isScrolling: false
     }),
+    computed: {
+      items () {
+        return [
+          {
+            title: this.$t('button.home'),
+            ref: '#home'
+          },
+          {
+            title: this.$t('button.services'),
+            ref: '#welcome'
+          },
+          {
+            title: this.$t('button.projects'),
+            ref: '#features'
+          }
 
+        ]
+      }
+    },
+    beforeCreate () {
+      const mq = window.matchMedia('(prefers-color-scheme: dark)')
+      mq.addEventListener('change', (e) => {
+        this.$vuetify.theme.dark = e.matches
+      })
+    },
     methods: {
       ...mapMutations(['toggleDrawer']),
       onScroll () {
         this.isScrolling = (window.pageYOffset ||
           document.documentElement.scrollTop || 0) > 25
+      },
+      setTheme () {
+        if (this.$vuetify.theme.dark) {
+          return (this.$vuetify.theme.dark = false)
+        } else {
+          return (this.$vuetify.theme.dark = true)
+        }
       }
     }
   }

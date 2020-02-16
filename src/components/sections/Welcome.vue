@@ -26,14 +26,14 @@
           >
             <v-img
               width="500px"
+              :height="$vuetify.breakpoint.mdAndUp ? '253px' : '260px'"
               fill
               style="overflow: hidden"
               :src="service.img"
-              contain
             />
 
             <v-card-title
-              class="title primary--text"
+              class="title"
               v-text="service.name"
             />
 
@@ -48,7 +48,7 @@
               <v-expansion-panel
                 class="elevation-0"
               >
-                <v-expansion-panel-header style="color: rgba(0, 0, 0, 0.54);  font-size: 14px">
+                <v-expansion-panel-header style="font-size: 14px">
                   {{ $t('welcome.services.development.coding-languages') }}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
@@ -76,7 +76,7 @@
               <v-expansion-panel
                 class="elevation-0"
               >
-                <v-expansion-panel-header style="color: rgba(0, 0, 0, 0.54);  font-size: 14px">
+                <v-expansion-panel-header style=" font-size: 14px">
                   {{ $t('welcome.services.development.frameworks') }}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
@@ -110,43 +110,49 @@
 
 <script>
   export default {
-    data: welcome => ({
-      services: [
-        {
-          name: welcome.$t('welcome.services.front-end-design.name'),
-          body: welcome.$t('welcome.services.front-end-design.body'),
-          img: require('@/assets/Services/Frond-End-Design.jpg')
-        },
-        {
-          name: welcome.$t('welcome.services.development.name'),
-          body: welcome.$t('welcome.services.development.body'),
-          codinglanguages: [{ name: 'Javascript', image: require('@/assets/DevelopmentLogos/JavaScript.png') }, { name: 'Vue.js', image: require('@/assets/DevelopmentLogos/VueJS.png') }, { name: 'PHP', image: require('@/assets/DevelopmentLogos/PHP.png') }, { name: 'Java', image: require('@/assets/DevelopmentLogos/Java.png') }, { name: 'Python', image: require('@/assets/DevelopmentLogos/Python.png') }, { name: 'Dart', image: require('@/assets/DevelopmentLogos/Dart.png') }],
-          frameworks: [{ name: 'Vuetify', image: require('@/assets/DevelopmentLogos/Vuetify.png') }, { name: 'Flutter', image: require('@/assets/DevelopmentLogos/Flutter.png') }, { name: '"Wordpress"', image: require('@/assets/DevelopmentLogos/WordPress.png') }],
-          img: require('@/assets/Services/Coding.jpg')
-        },
-        {
-          name: welcome.$t('welcome.services.seo-sea.name'),
-          body: welcome.$t('welcome.services.seo-sea.body'),
-          img: require('@/assets/Services/SEO-SEA.jpg')
-        },
-        {
-          name: welcome.$t('welcome.services.presentations.name'),
-          body: welcome.$t('welcome.services.presentations.body'),
-          body2: welcome.$t('welcome.services.presentations.body2'),
-          img: require('@/assets/Services/Presentations.jpg')
-        },
-        {
-          name: welcome.$t('welcome.services.video-editing.name'),
-          body: welcome.$t('welcome.services.presentations.body'),
-          img: require('@/assets/Services/Video-Editing.jpg')
-        },
-        {
-          name: welcome.$t('welcome.services.photo-editing.name'),
-          body: welcome.$t('welcome.services.photo-editing.body'),
-          img: require('@/assets/Services/Photo-Editing.jpg')
-        }
-      ]
-    })
+    data: () => ({
+    }),
+    computed: {
+      services () {
+        return [
+          {
+            name: this.$t('welcome.services.front-end-design.name'),
+            body: this.$t('welcome.services.front-end-design.body'),
+            img: require('@/assets/Services/Frond-End-Design.jpg')
+          },
+          {
+            name: this.$t('welcome.services.development.name'),
+            body: this.$t('welcome.services.development.body'),
+            codinglanguages: [{ name: 'Javascript', image: require('@/assets/DevelopmentLogos/JavaScript.png') }, { name: 'Vue.js', image: require('@/assets/DevelopmentLogos/VueJS.png') }, { name: 'PHP', image: require('@/assets/DevelopmentLogos/PHP.png') }, { name: 'Java', image: require('@/assets/DevelopmentLogos/Java.png') }, { name: 'Python', image: require('@/assets/DevelopmentLogos/Python.png') }, { name: 'Dart', image: require('@/assets/DevelopmentLogos/Dart.png') }],
+            frameworks: [{ name: 'Vuetify', image: require('@/assets/DevelopmentLogos/Vuetify.png') }, { name: 'Flutter', image: require('@/assets/DevelopmentLogos/Flutter.png') }, { name: '"Wordpress"', image: require('@/assets/DevelopmentLogos/WordPress.png') }],
+            img: require('@/assets/Services/Coding.jpg')
+          },
+          {
+            name: this.$t('welcome.services.seo-sea.name'),
+            body: this.$t('welcome.services.seo-sea.body'),
+            img: require('@/assets/Services/SEO-SEA.jpg')
+          },
+          {
+            name: this.$t('welcome.services.presentations.name'),
+            body: this.$t('welcome.services.presentations.body'),
+            body2: this.$t('welcome.services.presentations.body2'),
+            img: require('@/assets/Services/Presentations.jpg')
+          },
+          {
+            name: this.$t('welcome.services.editing.name'),
+            body: this.$t('welcome.services.editing.body'),
+            body2: this.$t('welcome.services.editing.body2'),
+            img: require('@/assets/Services/Photo-Editing.jpg')
+          },
+          {
+            name: this.$t('welcome.services.hosting.name'),
+            body: this.$t('welcome.services.hosting.body'),
+            body2: this.$t('welcome.services.hosting.body2'),
+            img: require('@/assets/Services/Hosting.jpg')
+          }
+        ]
+      }
+    }
   }
 </script>
 

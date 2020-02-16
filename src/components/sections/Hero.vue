@@ -27,7 +27,7 @@
             {{ $t('hero.description') }}
           </p>
 
-          <div class="py-4"></div>
+          <div class="py-4" />
 
           <v-row
             class="ma-0"
@@ -55,7 +55,7 @@
               min-width="175"
               rounded
             >
-              {{ $t('button.contact') }}
+              <span style="color: black">{{ $t('button.contact') }}</span>
             </v-btn>
           </v-row>
         </v-sheet>

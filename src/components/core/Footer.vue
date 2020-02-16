@@ -1,6 +1,7 @@
 <template>
   <v-footer
     absolute
+    color="primary"
     app
     class="elevation-12"
     height="88"
@@ -15,7 +16,20 @@
         justify="start"
       >
         <div class="hidden-xs-only">
-          <v-img src="/static/LND-Consulting-Long-Logo-Dark-LowRes.png" />
+          <v-img
+            v-if="$vuetify.theme.dark"
+            class="shrink"
+            contain
+            max-width="55px"
+            src="/static/Logo-Light.png"
+          />
+          <v-img
+            v-else
+            class="shrink"
+            contain
+            max-width="55px"
+            src="/static/Logo-Dark.png"
+          />
         </div>
         <v-spacer class="hidden-xs-only" />
         <div class="caption pr-md-12">

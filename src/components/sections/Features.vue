@@ -55,6 +55,12 @@
             class="body-1 font-weight-light"
             v-html="project.text"
           />
+          <v-btn
+            :href="project.src"
+            target="_blank"
+          >
+            {{ project.button }}
+          </v-btn>
         </v-col>
         <v-col
           v-if="j !== project.length - 1"
@@ -72,18 +78,26 @@
 <script>
   export default {
     data: projects => ({
-      projects: [
-        {
-          srcs: [require('@/assets/FreeTimeProjects/FTP_1.png'), require('@/assets/FreeTimeProjects/FTP_1.png')],
-          header: projects.$t('projects.termine.header'),
-          text: projects.$t('projects.termine.text_html')
-        },
-        {
-          srcs: [require('@/assets/FreeTimeProjects/EinfachBot1.jpg'), require('@/assets/FreeTimeProjects/EinfachBot2.jpg'), require('@/assets/FreeTimeProjects/EinfachBot3.jpg'), require('@/assets/FreeTimeProjects/EinfachBot4.jpg')],
-          header: projects.$t('projects.bot.header'),
-          text: projects.$t('projects.bot.text_html')
-        }
-      ]
-    })
+    }),
+    computed: {
+      projects () {
+        return [
+          {
+            srcs: [require('@/assets/FreeTimeProjects/FTP_1.png'), require('@/assets/FreeTimeProjects/FTP_1.png')],
+            header: this.$t('projects.termine.header'),
+            text: this.$t('projects.termine.text_html'),
+            button: this.$t('button.visit'),
+            src: 'https://einfachpunkt.de/'
+          },
+          {
+            srcs: [require('@/assets/FreeTimeProjects/Template1.jpg'), require('@/assets/FreeTimeProjects/Template2.jpg'), require('@/assets/FreeTimeProjects/Template3.jpg')],
+            header: this.$t('projects.template.header'),
+            text: this.$t('projects.template.text_html'),
+            button: this.$t('button.visit'),
+            src: 'https://preview.vuetifytemplate.com/'
+          }
+        ]
+      }
+    }
   }
 </script>

@@ -1,6 +1,7 @@
 {
   "button": {
        "learnmore": "learn more",
+       "visit": "Visit",
        "contact": "contact",
        "home": "home",
        "services": "services",
@@ -13,7 +14,7 @@
   "welcome": {
       "header": "Welcome",
       "sub-header": "Services",
-      "text": "More than 4 Years of Front-Ent-Development experience for different application.",
+      "text": "Multiple Years of Front-Ent-Development experience.",
       "services": {
         "front-end-design": {
          "name": "Front-End-Design",
@@ -38,10 +39,16 @@
                  "name": "Video Editing",
                  "body": "File cutting & animation for campaigns, presentations or marketing events"
          },
-         "photo-editing": {
-                 "name": "Photo Editing",
-                 "body": "Editing and creating Photos, Animations etc. for homepages, flyers and posters in Photoshop & Illustator"
-         }
+         "editing": {
+                 "name": "Video and Photo editing ",
+                 "body": "Editing and creating Photos, Animations etc. for homepages, flyers and posters in Photoshop & Illustrator",
+                 "body2": "Editing and creation of photos, animations etc. for homepages, flyers and posters in Adobe Photoshop, Illustrator and animate."
+               },
+         "hosting": {
+                 "name": "Server/Hosting",
+                 "body": "Hosting of web interfaces, APIs, e-mail servers and more.",
+                 "body2": "Setup and maintenance of Linux server systems, NginX, Docker, Unify, Proxmox and more."
+               }
       }
     },
   "github": {
@@ -54,9 +61,9 @@
   "header": "Termine. Einfach.",
   "text_html": "The aim of this cloud application is the basic coordination of appointments between a person making an appointment and a person automatically accepting the appointment based on the availability, as well as the full digitalization of the procedure. The software can be used e.g. in medical surgeries, schools or public authorities. The application was build for parent-teacher conferences and other school purposes. A database (<strong>MySQL</strong>), a web server (<strong>Apache</strong>) and a web service (<strong>REST</strong>) are required as server systems. In addition, there are various user interfaces available."
   },
-  "bot": {
-    "header": "Bot. Einfach.",
-    "text_html": "The goal was to develop a Discord Bot with which it is possible to see who is currently on which Einfach. game server. If a server crashes, it should be possible for every member of the server to restart the server via Discord. Realized via <strong>Linux Bash Scripts</strong> for the \"server start\" commands, <strong>query</strong> for the communication with the game servers and <strong>JavaScript</strong> for the Discord Bot."
+  "template": {
+    "header": "VuetifyTemplate",
+    "text_html": "The goal was to develop a template for Vuetify, which contains a ready-made project structure. The project structure contains Vuetify and other plugins like vue-router and vuex. Additionally, an example is included for each plugin. So beginners can understand the structure/plugins and learn the plugin features easily with VuetifyTemplate. For experienced Vuetify developers, the template saves time and provides a clear and consistent structure across multiple projects. "
     }
   }
 }
