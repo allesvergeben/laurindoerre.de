@@ -113,6 +113,7 @@
     data: () => ({
     }),
     computed: {
+      // TODO json parse and loop directly through the JSON
       services () {
         return [
           {

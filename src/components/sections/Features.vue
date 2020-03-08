@@ -80,6 +80,7 @@
     data: projects => ({
     }),
     computed: {
+      // TODO json parse and loop directly through the JSON
       projects () {
         return [
           {
