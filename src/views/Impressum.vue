@@ -55,7 +55,6 @@
                 <v-card-actions>
                   <v-spacer />
                   <v-btn
-                    color="primary"
                     text
                     target="_blank"
                     aria-label="visit the source"
@@ -107,7 +106,6 @@
                 <v-card-actions>
                   <v-spacer />
                   <v-btn
-                    color="primary"
                     text
                     target="_blank"
                     :href="card.source"
