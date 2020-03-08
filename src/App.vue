@@ -7,28 +7,6 @@
     <core-footer />
 
     <core-fab />
-
-    <v-dialog
-      v-model="construction"
-      width="450"
-    >
-      <v-card>
-        <v-card-title>unter construction</v-card-title>
-        <v-card-text>
-          My new homepage is work in progress and will be updated until end of <strong>February 2020</strong>.
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            text
-            aria-label="close"
-            @click="construction = false"
-          >
-            close
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
   </v-app>
 </template>
 
