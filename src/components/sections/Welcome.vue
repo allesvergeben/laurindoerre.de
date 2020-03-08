@@ -40,7 +40,7 @@
             <v-divider class="ma-2" />
             <v-card-text>{{ service.body }} <br> {{ service.body2 }}</v-card-text>
             <v-expansion-panels
-              v-if="service.name==='Development'"
+              v-if="service.name ==='Development' || service.name === 'Entwicklung'"
               class="elevation-0"
               multiple
               accordion
