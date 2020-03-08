@@ -8,7 +8,7 @@
     "projects": "Projekte"
   },
   "hero": {
-    "title": "Front-Entwicklung",
+    "title": "Front-End-Entwicklung",
     "description": "Applikationen, Webseiten, Schnittstellen & mehr"
   },
   "welcome": {
@@ -21,14 +21,14 @@
         "body": "Neugestaltung bestehender Front-End-Schnittstellen sowie Design, Entwicklung und Wartung von kundenindividuellen Front-End-Schnittstellen."
       },
       "development": {
-        "name": "Entwicklung ",
+        "name": "Entwicklung",
         "body": "Anwendungsentwicklung in den folgenden Sprachen und Frameworks...",
         "coding-languages": "Programmiersprachen",
         "frameworks": "Frameworks"
       },
       "seo-sea": {
         "name": "SEO - SEA",
-        "body": "Suchmaschinenoptimierung von der Indizierung bis zur Optimierung der Website sowie Suchmaschinenwerbung mit z.B. Google AdWords."
+        "body": "Suchmaschinenoptimierung von der Indexierung bis zur Optimierung der Website sowie Suchmaschinenwerbung z.B. mit Google AdWords."
       },
       "presentations": {
         "name": "Präsentationen ",
@@ -37,29 +37,29 @@
       },
       "editing": {
         "name": "Video- und Fotobearbeitung",
-        "body": "Videoschnitt & Animation für Kampagnen, Präsentationen oder Marketingveranstaltungen ",
-        "body2": "Bearbeitung und Erstellung von Fotos, Animationen etc. für Homepages, Flyer und Plakate in Adobe Photoshop, Illustrator und animate."
+        "body": "Videoschnitt & Animation für Kampagnen, Präsentationen oder Marketingveranstaltungen.",
+        "body2": "Bearbeitung von Fotos, Animationen etc. für Homepages, Flyer und Plakate in Adobe Photoshop, Illustrator und Animate."
       },
       "hosting": {
         "name": "Server/Hosting",
-        "body": "Hosting von Web-Interfaces, APIs, E-Mail Servers, ...",
-        "body2": "Einrichtung und Wartung von Linux Server Systemen, NginX, Docker, Unify, Proxmox, ..."
+        "body": "Hosting von Web-Interfaces, APIs, und Mailserver.",
+        "body2": "Einrichtung und Wartung von Linux Server Systemen (z. B. NginX, Docker, Unify, Proxmox, ...)."
       }
     }
   },
   "github": {
-    "text": "Schauen Sie sich den Code dieser Website jetzt an!"
+    "text": "Schauen Sie sich den Code dieser Website hier an!"
   },
   "projects": {
     "sub-header": "Projekte",
     "text": "Referenz-Projekte ",
     "termine": {
       "header": "Termine. Einfach.",
-      "text_html": "Das Ziel dieser Cloud-Anwendung ist die grundsätzliche Koordination von Terminen zwischen einer Person, die einen Termin vereinbart, und einer Person, die den Termin je nach Verfügbarkeit automatisch annimmt, sowie die vollständige Digitalisierung des Verfahrens. Die Software kann z.B. in Arztpraxen, Schulen oder Behörden eingesetzt werden. Die Anwendung wurde für Elternsprechtage und andere schulische Zwecke entwickelt. Als Serversysteme werden eine Datenbank (<stark>MySQL</strong>), ein Webserver (<stark>Apache</strong>) und ein Webservice (<stark>REST</strong>) benötigt. Darüber hinaus sind verschiedene Benutzerschnittstellen verfügbar."
+      "text_html": "Entwicklung einer Cloud-Anwendung die grundsätzliche Koordination von Terminen zwischen Personen, welche Termine vereinbarem, und einer Person, die den Termin je nach Verfügbarkeit automatisch annimmt, sowie die vollständige Digitalisierung des Verfahrens.<br />Die Software kann z.B. in Arztpraxen, Schulen oder Behörden eingesetzt werden. Die Anwendung wurde für Elternsprechtage und andere schulische Zwecke entwickelt. Als Serversysteme werden eine Datenbank (<stark>MySQL</strong>), ein Webserver (<stark>Apache</strong>) und ein Webservice (<stark>REST</strong>) benötigt. Darüber hinaus sind verschiedene Benutzerschnittstellen verfügbar."
     },
     "template": {
       "header": "VuetifyTemplate",
-      "text_html": "Ziel war es, eine Vorlage für Vuetify zu entwickeln, die eine vorgefertigte Projektstruktur enthält. Die Projektstruktur enthält Vuetify und andere Plugins wie vue-router und vuex. Zusätzlich ist für jedes Plugin ein Beispiel enthalten. So können auch Anfänger die Struktur/Plugins verstehen und die Plugin-Funktionen mit VuetifyTemplate leicht erlernen. Für erfahrene Vuetify-Entwickler spart die Vorlage Zeit und bietet eine klare und konsistente Struktur über mehrere Projekte hinweg."
+      "text_html": "Entwicklung einer Standard Vorlage für Vuetify zu entwickeln, die eine vorgefertigte Projektstruktur enthält. Die Projektstruktur enthält Vuetify und andere Plugins wie vue-router und vuex. Zusätzlich ist für jedes Plugin ein Beispiel enthalten. So können auch Anfänger die Struktur/Plugins verstehen und die Plugin-Funktionen mit VuetifyTemplate leicht erlernen. Für erfahrene Vuetify-Entwickler spart die Vorlage Zeit und bietet eine klare und konsistente Struktur über mehrere Projekte hinweg."
 
     }
   }
