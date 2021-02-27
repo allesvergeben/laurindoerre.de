@@ -14,15 +14,15 @@
   "welcome": {
       "header": "Welcome",
       "sub-header": "Services",
-      "text": "Multiple Years of Front-Ent-Development experience.",
+      "text": "Several Years of Front-Ent-Development experience.",
       "services": {
         "front-end-design": {
          "name": "Front-End-Design",
-         "body": "Redesign of existing Front-End Interfaces as well as design, develop and maintennance of customer tailered Front-End Interfaces."
+         "body": "Redesign of existing front-end interfaces as well as design, development and maintennance of customer tailered Front-End Interfaces."
          },
          "development": {
                  "name": "Development",
-                 "body": "Application development in the following Languages and Frameworks...",
+                 "body": "Application development in following Languages and Frameworks...",
                  "coding-languages": "Coding Languages",
                  "frameworks": "Frameworks"
          },
@@ -52,7 +52,7 @@
       }
     },
   "github": {
-    "text": "Want to see myself written Code? Check the Code of this Website out now!"
+    "text": "Want to see my self-written Code? Check the Code of this Website out now!"
   },
   "projects": {
   "sub-header": "Projects",
